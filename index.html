@@ -211,7 +211,7 @@ const ID=()=>Math.random().toString(36).slice(2,9);
 let S={user:null,lang:'en',fo:'all',folders:[],notes:[],seeded:0};
 try{Object.assign(S,JSON.parse(localStorage.getItem('nv1')||'{}'))}catch(e){}
 const save=()=>{try{localStorage.setItem('nv1',JSON.stringify(S))}catch(e){}};
-const WH='<div>Здравствуйте!</div><div>Мы компания DNA. Делаем базовые проекты, но ещё лучше.</div><div><br></div><div>Founder: <b>@c3_nti ★</b></div>',WX='Здравствуйте!\nМы компания DNA. Делаем базовые проекты, но ещё лучше.\n\nFounder: @c3_nti ★';
+const WH='<div>Hallo!</div><div>We are company DNA. Make basic project, but do it better.</div><div><br></div><div>Founder: <b>@c3_nti ★</b></div>',WX='Hallo!\nWe are company DNA. Make basic project, but do it better\n\nFounder: @c3_nti ★';
 S.notes.forEach(n=>{if(n.x&&/^Welcome to /.test(n.x)){n.x=WX;n.h=WH}});
 let DB=null,UU=null,UID=null,OWN=false,FU=null,PR={},SN=[],subd=0;
 const ready=(async()=>{try{if(window.claude){[DB,UU]=await Promise.all([claude.use('db'),claude.use('user')]);
