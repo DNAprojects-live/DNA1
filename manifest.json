@@ -1,8 +1,8 @@
 {
   "name": "DNA notes",
   "short_name": "DNA notes",
-  "start_url": "/DNA1/",
-  "scope": "/DNA1/",
+"start_url": "/",
+"scope": "/",
   "display": "standalone",
   "background_color": "#000000",
   "theme_color": "#000000",
